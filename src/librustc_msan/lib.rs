@@ -12,8 +12,8 @@
 #![feature(sanitizer_runtime)]
 #![feature(alloc_system)]
 #![feature(allocator_api)]
-#![feature(global_allocator)]
 #![feature(staged_api)]
+#![cfg_attr(stage0, feature(global_allocator))]
 #![no_std]
 #![unstable(feature = "sanitizer_runtime_lib",
             reason = "internal implementation detail of sanitizers",
